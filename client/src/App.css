@@ -1,0 +1,19 @@
+body {
+  background-color: #1b8391; /* Your chosen color */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button-container {
+  display: flex;        /* Use flexbox to layout children */
+  justify-content: center; /* Center the buttons in the container */
+  gap: 10px;            /* Optional: Add some space between the buttons */
+}
