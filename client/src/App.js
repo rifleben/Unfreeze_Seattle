@@ -2,6 +2,7 @@ import React from "react";
 import NoteCard from "./components/NoteCard/NoteCard"; // Adjust the import path as necessary
 import "./App.css";
 
+
 function App() {
   return (<div>
     <div className="container">
@@ -12,8 +13,8 @@ function App() {
         <p>This is the content of the flashcard.</p>
       </NoteCard>
       <div className="button-container">
-        <button class='btn btn-primary'>Previous Question</button>
-        <button class='btn btn-primary'>Next Question</button>
+        <button class='btn btn-primary'><i class="bi bi-arrow-left-square-fill"></i> Last Question</button>
+        <button class='btn btn-primary'>Next Question <i class="bi bi-arrow-right-square-fill"></i></button>
       </div>
     </div>
     </div>

@@ -1,12 +1,17 @@
 const express = require('express');
-const path = require('path');  // Import the path module
+const path = require('path');
 const app = express();
-const port = 3000;
 
-// Serve static files from the 'client' directory
-app.use(express.static(path.join(__dirname, '../client')));
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-// Start the server
+// The "catchall" handler: for any request that doesn't
+// match one above, send back the React app's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
+
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Server listening on port ${port}`);
 });
