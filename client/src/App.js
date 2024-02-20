@@ -17,7 +17,7 @@ function App() {
           <p>This is the content of the flashcard.</p>
         </NoteCard>
         <div className={styles.buttonContainer}>
-          <CustomButton onClick={() => console.log('Previous Question')}>
+          <CustomButton onClick={() => console.log('Prev Question')}>
             <i className="bi bi-arrow-left-square-fill"></i> Previous Question
           </CustomButton>
           <CustomButton onClick={() => console.log('Next Question')}>

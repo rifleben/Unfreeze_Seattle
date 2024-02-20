@@ -1,6 +1,7 @@
 .noteCard {
-    width: 350px;
-    height: 200px;
+    cursor: default;
+    width: 450px;
+    height: 250px;
     margin: 10px;
     border: 1px solid #ddd;
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
@@ -12,7 +13,10 @@
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
+.noteCard, .noteCard * {
+    cursor: default;
+  }
+  
 .noteCard:hover {
     transform: scale(1.05);
 }
