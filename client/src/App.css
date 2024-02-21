@@ -1,5 +1,6 @@
 body {
-  background-color: #1b8391; /* 
+  background-color: #1b8391; 
+  /* 
   #1B8391
   #324B4F
   #95B0B5 our pallette
@@ -26,7 +27,6 @@ h1 {
 }
 
 .button-container {
-  display: flex;        /* Use flexbox to layout children */
-  justify-content: center; /* Center the buttons in the container */
-  gap: 10px;            /* Optional: Add some space between the buttons */
+  display: flex;      
+  justify-content: center;
 }
