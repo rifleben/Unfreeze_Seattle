@@ -55,7 +55,7 @@ function App() {
           <h1>Seattle Unfreeze</h1>
         </div>
         <NoteCard>
-          <p>{cardText}</p>
+          <p><strong>{cardText}</strong></p>
         </NoteCard>
         <div className={styles.buttonContainer}>
           <CustomButton onClick={prevQuestion}>
