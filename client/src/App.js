@@ -19,14 +19,12 @@ function App() {
     axios.get('http://localhost:3001/notecards')
       .then((response) => {
         setData(response.data);
-        console.log(response.data);
       }).catch((error) => {
         console.log(error);
       });
   }, []);
 
   const nextQuestion = () => {
-
     setIndex((prevIndex) => {
       const newIndex = prevIndex + 1;
       if (newIndex > data.notecards.length - 1) {
