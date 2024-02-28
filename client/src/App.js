@@ -18,6 +18,7 @@ function App() {
   useEffect(() => {
     axios.get('http://localhost:3001/notecards')
       .then((response) => {
+        console.log(response.data);
         setData(response.data);
       }).catch((error) => {
         console.log(error);
