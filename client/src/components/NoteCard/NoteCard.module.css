@@ -1,6 +1,7 @@
 .noteCard {
-    cursor: default;
-    width: 450px;
+    cursor: pointer;
+    width: 100%; /* Make width responsive */
+    max-width: 450px; /* Maximum width */
     height: 250px;
     margin: 10px;
     border: 1px solid #ddd;
@@ -10,9 +11,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     transition: transform 0.3s ease;
-}
+  }
+  
+  @media (max-width: 500px) {
+    .noteCard {
+      width: 90%; 
+      height: auto; 
+      margin: 10px auto;
+      padding: 20px;
+    }
+  }
 .noteCard, .noteCard * {
     cursor: default;
   }
