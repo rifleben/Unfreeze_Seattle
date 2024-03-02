@@ -53,6 +53,7 @@ function App() {
         <div>
           <h1>Seattle Unfreeze</h1>
         </div>
+        <div>
         <NoteCard>
           <p><strong>{cardText}</strong></p>
         </NoteCard>
@@ -63,6 +64,7 @@ function App() {
           <CustomButton onClick={nextQuestion}>
             Next Question <i className="bi bi-arrow-right-square-fill"></i>
           </CustomButton>
+        </div>
         </div>
       </div>
     </div>
