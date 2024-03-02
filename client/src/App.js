@@ -16,7 +16,7 @@ function App() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:3001/notecards')
+    axios.get('/notecards')
       .then((response) => {
         console.log(response.data);
         setData(response.data);
