@@ -53,7 +53,7 @@ function App() {
         <div>
           <h1>Seattle Unfreeze</h1>
         </div>
-        <div>
+        <div className="container">
         <NoteCard>
           <p><strong>{cardText}</strong></p>
         </NoteCard>
