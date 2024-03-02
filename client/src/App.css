@@ -11,20 +11,6 @@ body {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem; /* Smaller size for smaller screens */
-  }
-
-  .container {
-    padding: 20px; /* Add padding to avoid touching the viewport edges */
-    height: auto; /* Adjust height for scrollable content */
-    min-height: 100vh; /* Ensure it at least fills the viewport height */
-  }
-
-  /* Any other responsive adjustments you need */
-}
-
 h1 {
   color: #95B0B5;
   size: 3rem;
