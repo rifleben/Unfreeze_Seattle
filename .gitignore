@@ -1,3 +1,4 @@
+#Standard .gitignore template
 # Dependency directories
 node_modules/
 npm-debug.log
