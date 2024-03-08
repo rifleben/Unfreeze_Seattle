@@ -28,7 +28,6 @@ Thumbs.db
 
 # Optional: Documentation files
 /docs
-*.md
 
 # Optional: Archives and compressed files
 *.zip

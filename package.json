@@ -1,7 +1,7 @@
 {
     "scripts": {
         "start": "node server/app.js",
-        "heroku-postbuild": "npm install --prefix server && cd client && npm install && npm run build"
+        "heroku-postbuild": "cd server && npm install && cd ../client && npm install && npm run build"
       }
       
   }
