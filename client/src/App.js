@@ -50,7 +50,7 @@ function App() {
   return (
     <div>
       <div className="container">
-          <h1>Seattle Unfreeze</h1>
+          <h1>Seattle Unfreezeee</h1>
         <NoteCard>
           <p><strong>{cardText}</strong></p>
         </NoteCard>
