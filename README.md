@@ -11,6 +11,9 @@ The webapp was developed as a way to break the notorious Seattle Freeze.
 - API endpoint in Express for the notecard data on "/notecards"
 
 ## Installation
+- Clone the repository to your local machine using `git clone` and the repository URL.
+- Ensure you have Node.js installed on your machine. If not, you can download it [here](https://nodejs.org/en/download/).
+- Open the file and navigate to the root directory of the repository.
 - Please download the dependencies for the program using from the root directory by running: `cd server && npm install && cd ../client && npm install && npm run build`
 - The `npm install`s will download the various dependencies needed to run the application.
 - The `npm run build` builds/compiles the React app to be served by the Express server.
