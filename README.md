@@ -15,11 +15,11 @@ The webapp was developed as a way to break the notorious Seattle Freeze.
 - Ensure you have Node.js installed on your machine. If not, you can download it [here](https://nodejs.org/en/download/).
 - Open the file and navigate to the root directory of the repository.
 - Please download the dependencies for the program using from the root directory by running: `cd server && npm install && cd ../client && npm install && npm run build`
-- The `npm install`s will download the various dependencies needed to run the application.
-- The `npm run build` builds/compiles the React app to be served by the Express server.
+    - The `npm install`s will download the various dependencies needed to run the application.
+    - The `npm run build` builds/compiles the React app to be served by the Express server.
 
 ## Usage
-To run the application, navigate to `server/app.js`, and in the terminal, within the open file, run the command `node app.js`.
+To run the application, navigate to `server/app.js`, and in the terminal, within the open file, run the command `node app.js` OR from the root directory run `npm start`.
 
 The application, by default, will run on `localhost:3001`, if this port is currently being used on your machine, you can change the port on the `app.js` file. 
 
@@ -33,3 +33,6 @@ The application, by default, will run on `localhost:3001`, if this port is curre
     - Structure and styling for each module, as well as overall page styling
 - Express
     - Server side handling and serving of the React app.
+
+## Example Screenshot
+![Example Screenshot](./frontend_ss.png)
