@@ -3,7 +3,7 @@ body {
   /* 
   #1B8391
   #324B4F
-  #95B0B5 our pallette
+  #95B0B5 Unfreeze pallette
   #7F709E
   #4D406B
   */
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  color: #95B0B5;
+  color: #b3d6dd; /* made lighter than pallete for contrast */
   size: 3rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -23,7 +23,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; 
   padding: 20px;
 }
 

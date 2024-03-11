@@ -10,11 +10,11 @@ import styles from "./components/NoteCard/CustomButton.module.css";
 
 
 function App() {
-
+  // using state to store data from API and then keep track of an index
   const [data, setData] = useState([]);
   const [index, setIndex] = useState(0);
 
-
+  // useEffect to make an API call to the backend
   useEffect(() => {
     axios.get('/notecards')
       .then((response) => {
@@ -25,6 +25,7 @@ function App() {
       });
   }, []);
 
+  // function to increment the index on button click
   const nextQuestion = () => {
     setIndex((prevIndex) => {
       const newIndex = prevIndex + 1;
@@ -35,6 +36,7 @@ function App() {
     })
   }
 
+  // function to decrement the index on button click
   const prevQuestion = () => {
     setIndex((prevIndex) => {
       const newIndex = prevIndex - 1;
@@ -45,8 +47,10 @@ function App() {
     })
   }
 
+  // if data is not loaded, or does not exist, display loading message
   const cardText = data.notecards ? data.notecards[index].text : "Loading...";
-
+  
+  // return the notecard and buttons (buttons use bootstrap icons for arrows)
   return (
     <div>
       <div className="container">
