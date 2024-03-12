@@ -7,6 +7,8 @@ The webapp was developed as a way to break the notorious Seattle Freeze.
 
 ## Features
 - 30 "notecards" with deep questions that can be rotated through by clicking the "next" or "previous" buttons.
+    - Notecards are loosely based on the "36 Questions That Lead to Love" which can be found [here](https://www.cosmopolitan.com/uk/love-sex/relationships/a32618/36-questions-fall-in-love/).
+
 - Using React, the state of the notecard is modified on click, but the webpage is NOT refreshed.
 - API endpoint in Express for the notecard data on `/notecards`.
 
@@ -22,6 +24,8 @@ The webapp was developed as a way to break the notorious Seattle Freeze.
 To run the application, navigate to `server/app.js`, and in the terminal, within the open file, run the command `node app.js` OR from the root directory run `npm start`.
 
 The application, by default, will run on `localhost:3001`, if this port is currently being used on your machine, you can change the port on the `app.js` file. 
+
+Once at the URL, you can click the "next" and "previous" buttons to cycle through the notecards.
 
 ## Technologies Used
 - React

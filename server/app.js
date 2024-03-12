@@ -9,12 +9,13 @@ app.use(cors()); //enable cors for all routes
 //serve react built files:
 app.use(express.static(path.join(__dirname, '../client/build')));
 
-//serve json content:
+//serve json content as its own endpoint:
 app.get("/notecards", (req, res) => {
   res.json(cardJSON);
 });
 
 // use process.env.PORT for cloud deployment heroku env will have it set
+// otherwise we use 3001 for local server
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
