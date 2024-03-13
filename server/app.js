@@ -11,6 +11,15 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 //serve json content as its own endpoint:
 app.get("/notecards", (req, res) => {
+
+  // randomize the order of the notecards
+  cardJSON.notecards.sort(() => Math.random() - 0.5);
+  res.json(cardJSON);
+});
+
+
+// serve notecards in sorted order:
+app.get("/notecards/sorted", (req, res) => {
   res.json(cardJSON);
 });
 
