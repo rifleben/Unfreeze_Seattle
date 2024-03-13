@@ -10,7 +10,8 @@ The webapp was developed as a way to break the notorious Seattle Freeze.
     - Notecards are loosely based on the "36 Questions That Lead to Love" which can be found [here](https://www.cosmopolitan.com/uk/love-sex/relationships/a32618/36-questions-fall-in-love/).
 
 - Using React, the state of the notecard is modified on click, but the webpage is NOT refreshed.
-- API endpoint in Express for the notecard data on `/notecards`.
+- API endpoint in Express for the notecard data on `/notecards` to receive the notecard data, randomized, as it is appearing on the front end.
+    - If you'd like to see the sorted data, you can navigate to `/notecards/sorted`.
 
 ## Installation
 - Clone the repository to your local machine using `git clone` and the repository URL.
