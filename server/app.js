@@ -12,9 +12,12 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 //serve json content as its own endpoint:
 app.get("/notecards", (req, res) => {
 
+  // make a deep copy of the notecards
+  const notecardsObject = JSON.parse(JSON.stringify(cardJSON));
+
   // randomize the order of the notecards
-  cardJSON.notecards.sort(() => Math.random() - 0.5);
-  res.json(cardJSON);
+  notecardsObject.notecards.sort(() => Math.random() - 0.5);
+  res.json(notecardsObject);
 });
 
 
